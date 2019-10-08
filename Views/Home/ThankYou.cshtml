@@ -1,0 +1,20 @@
+﻿@model BuckeyeLawnServices.Models.NewCustomerRequest
+
+@{ 
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <body>
+        <p>
+            <h1>Thank you, @Model.Name! <br /> Todd Welsh will contact you as soon as possible.</h1>
+        </p>
+        <p>Click <a asp-action="ListRequests">here</a> to see new client info.</p>
+    </body>
+</head>
+</html>

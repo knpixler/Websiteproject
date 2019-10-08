@@ -1,0 +1,38 @@
+﻿@model  IEnumerable<BuckeyeLawnServices.Models.NewCustomerRequest>
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="ViewPort" content="width=device-width" />
+    <title>Requests</title>
+</head>
+<body>
+    <h2>Here are the new client requests.</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (BuckeyeLawnServices.Models.NewCustomerRequest r in Model)
+            {
+                <tr>
+                    <td>@r.Name</td>
+                    <td>@r.Email</td>
+                    <td>@r.Phone</td>
+                    <td>@r.Address</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

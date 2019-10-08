@@ -1,0 +1,91 @@
+﻿@{
+    Layout = "_Layout";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Buckey Lawn Services</title>
+    <style>
+        p.a {word-spacing: 550px}
+    </style>
+</head>
+<body>
+    <img src="~/lib/BeforeAfter/CleanUpBefore1.jpg" style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+    <div>
+        <center>
+            <font color="red">
+                <p style=" border:3px; border-style:dashed; border-color:antiquewhite;">
+                    @ViewBag.Greeting <br>Buckeye Lawn Services  <br />and Pressure Washing!
+                </p>
+            </font>
+        </center>
+        <p>
+            Services Offered
+            <ul style="list-style-type : square">
+                <li>Lawn Services (incl. Mowing, Weed Eating, Edging, Hand Blowing</li>
+                <li>Hedge/Bush Trimming</li>
+                <li>Spring/Fall Cleanup</li>
+                <li>Pressure Washing</li>
+            </ul>
+        </p>
+        <center>
+            <form method="get" asp-action="NewRequest"><button type="submit">Request to become a new client!</button></form>
+        </center>
+        <p class="a" style=" margin-left:210px">
+            <br />Before  After
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="~/lib/BeforeAfter/CleanUpBefore1.jpg" width="500" height="250" alt="Backyard Before" style="margin:10px 50px" />
+        </div>
+        <div class="column">
+            <img src="~/lib/BeforeAfter/CleanUpAfter1.jpg" width="500" height="250" alt="Backyard After" style="margin:10px 0px" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="~/lib/BeforeAfter/CleanUpBefore2.jpg" width="500" height="250" alt="Backyard Before" style="margin:10px 50px" />
+        </div>
+        <div class="column">
+            <img src="~/lib/BeforeAfter/CleanUpAfter2.jpg" width="500" height="250" alt="Backyard After" style="margin:10px 0px" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="~/lib/BeforeAfter/HouseBushesBefore.jpg" width="500" height="250" alt="Backyard Before" style="margin:10px 50px" />
+        </div>
+        <div class="column">
+            <img src="~/lib/BeforeAfter/HouseBushesAfter.jpg" width="500" height="250" alt="Backyard After" style="margin:10px 0px" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="~/lib/BeforeAfter/SmallYardBefore.jpg" width="500" height="250" alt="Backyard Before" style="margin:10px 50px" />
+        </div>
+        <div class="column">
+            <img src="~/lib/BeforeAfter/SmallYardAfter.jpg" width="500" height="250" alt="Backyard After" style="margin:10px 0px" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="~/lib/BeforeAfter/BackyardBefore.jpg" width="500" height="250" alt="Backyard Before" style="margin:10px 50px" />
+        </div>
+        <div class="column">
+            <img src="~/lib/BeforeAfter/BackyardAfter.jpg" width="500" height="250" alt="Backyard After" style="margin:10px 0px" />
+        </div>
+    </div>
+
+
+
+</body>
+</html>

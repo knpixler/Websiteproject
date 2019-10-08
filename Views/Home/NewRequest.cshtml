@@ -1,0 +1,36 @@
+﻿@model  BuckeyeLawnServices.Models.NewCustomerRequest
+
+@{  
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>New Request</title>
+</head>
+<body>
+    <form asp-action="New Request" method="post">
+        <div asp-validation-summary="All"></div>
+        <p>
+            <label asp-for="Name">Your Name:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Email">Your Email:</label>
+            <input asp-for="Email" />
+        </p>
+        <p>
+            <label asp-for="Phone">Your number:</label>
+            <input asp-for="Phone" />
+        </p>
+        <p>
+            <label asp-for="Address">Your address:</label>
+            <input asp-for="Address" />
+        </p>
+        <button type="submit">Submit New Client Request</button>
+    </form>
+</body>
+</html>
